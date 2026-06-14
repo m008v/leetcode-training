@@ -5,6 +5,11 @@ class Solution(object):
         :type nums2: List[int]
         :rtype: float
         """
+        # nums = sorted(nums1 + nums2)
+        # n = len(nums)
+        # if n % 2 == 1:
+        #     return float(nums[n // 2])
+        # return (nums[n // 2 - 1] + nums[n // 2]) / 2.0
         nums = nums1 + nums2
         i, j = 0, 1
         for ia in range(i, len(nums)):
@@ -23,5 +28,5 @@ class Solution(object):
         t = (float(middle_1) + float(middle_2)) / 2.0 
         return t
 
-X = Solution()
-print(X.findMedianSortedArrays([1, 3], [2, 7]))
+# X = Solution()
+# print(X.findMedianSortedArrays([1, 3], [2, 7]))
